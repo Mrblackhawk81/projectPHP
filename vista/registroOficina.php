@@ -11,11 +11,7 @@
 <body>
     <div class="container mt-5">
         <h2>Registrar Oficina</h2>
-        <form action="guardar_oficina.php" method="POST">
-            <div class="mb-3">
-                <label for="codigo_oficina" class="form-label">Código de Oficina</label>
-                <input type="number" class="form-control" id="codigo_oficina" name="codigo_oficina" required>
-            </div>
+        <form action="../controlador/ctrlOficina.php" method="POST">
             <div class="mb-3">
                 <label for="ciudad" class="form-label">Ciudad</label>
                 <input type="text" class="form-control" id="ciudad" name="ciudad" required>

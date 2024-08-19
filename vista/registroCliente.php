@@ -65,6 +65,8 @@
                 <input type="number" step="0.01" class="form-control" id="limite_credito" name="limite_credito">
             </div>
             <button type="submit" class="btn btn-primary">Guardar</button>
+            <hr>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='registroPago.php'">Ingresar modo de pago</button>
         </form>
     </div>
 

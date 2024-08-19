@@ -322,4 +322,14 @@ class Cliente {
         echo "<br>";
         $this->con->executeQuery($sql);
     }
+
+    // Verificar si el cliente existe
+    public function existeCliente()
+    {
+        $this->con->createConnection();
+        $sql = "SELECT COUNT(*) FROM cliente WHERE codigo_cliente = $this->codigo_cliente";
+        $result = $this->con->executeQuery($sql);
+        $row = $result->fetch_row();
+        return $row[0] > 0;
+    }
 }

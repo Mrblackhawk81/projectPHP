@@ -11,7 +11,7 @@
 <body>
     <div class="container mt-5">
         <h2>Registrar Empleado</h2>
-        <form action="guardar_empleado.php" method="POST">
+        <form action="../controlador/ctrlEmpleado.php" method="POST">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
